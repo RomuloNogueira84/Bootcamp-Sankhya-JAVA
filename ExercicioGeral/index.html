@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio Geral HTML</title>
+</head>
+<body>
+  <!--Questão 01-->
+  <table border="1" style="border-collapse: collapse;">
+    <tr>
+      <th>Nome do Produto</th>
+      <th>Preço</th> 
+      <th>Disponibilidade</th>
+    </tr>
+    <tr>
+      <td>Produto 1</td>
+      <td>R$10</td> 
+      <td>Disponível</td>
+    </tr>
+    <tr>
+      <td>Produto 2</td>
+      <td>R$20</td> 
+      <td>Indisponível</td>
+    </tr>
+    <tr>
+      <td>Produto 3</td>
+      <td>R$30</td> 
+      <td>Disponível</td>
+    </tr>
+    <tr>
+      <td>Produto 4</td>
+      <td>R$40</td> 
+      <td>Indisponível</td>
+    </tr>
+    <tr>
+      <td>Produto 5</td>
+      <td>R$50</td> 
+      <td>Disponível</td>
+    </tr>
+  </table>
+  <hr>
+  <!--Questão 02-->
+  <h2>Lista Não Ordenada</h2>
+<ul>
+  <li>Futebol de cegos</li>
+  <li>Leitura de aventura solo</li>
+  <li>Músicas para ficar bebado no boteco</li>
+</ul>  
+
+<h2>Lista Ordenada</h2>
+<ol>
+  <li>Pegue duas fatias de pão integral</li>
+  <li>Adicione manteiga sem sal</li>
+  <li>Coloque o recheio saudavel </li>
+  <li>Feche o sanduíche supremo</li>
+</ol>  
+
+<h2>Lista de Definição</h2>
+<dl>
+  <dt>HTML</dt>
+  <dd>Linguagem de marcação usada para estruturar páginas web</dd>
+  <dt>CSS</dt>
+  <dd>Linguagem usada para estilizar elementos escritos em uma linguagem de marcação como HTML</dd>
+  <dt>JavaScript</dt>
+  <dd>Linguagem de programação que permite implementar funcionalidades mais complexas em páginas web</dd>
+</dl>
+<hr>
+<!--Questão 05-->
+<h2>Formulário de Cadastro</h2>
+
+<form>
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="pwd">Senha:</label><br>
+  <input type="password" id="pwd" name="pwd"><br>
+  <label for="cpwd">Confirmação de Senha:</label><br>
+  <input type="password" id="cpwd" name="cpwd"><br>
+  <label for="gender">Gênero:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Masculino</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Feminino</label><br>
+  <label for="interests">Interesses:</label><br>
+  <input type="checkbox" id="sports" name="interests" value="sports">
+  <label for="sports">Esportes</label><br>
+  <input type="checkbox" id="music" name="interests" value="music">
+  <label for="music">Música</label><br>
+  <input type="checkbox" id="reading" name="interests" value="reading">
+  <label for="reading">Leitura</label><br>
+  <label for="country">País de Residência:</label><br>
+  <select id="country" name="country">
+    <option value="brasil">Brasil</option>
+    <option value="usa">Estados Unidos</option>
+    <option value="canada">Canadá</option>
+  </select><br>
+  <input type="submit" value="Enviar">
+</form> 
+</body>
+</html>

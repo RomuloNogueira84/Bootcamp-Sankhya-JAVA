@@ -1,0 +1,45 @@
+
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+  margin: 20px auto; 
+}
+
+
+thead {
+  background-color: #222; 
+  color: #fff; 
+  text-align: center; 
+}
+
+thead th {
+  padding: 10px; 
+  border: 1px solid #fff; 
+}
+
+
+tbody tr {
+  background-color: #f8f8f8; 
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff; 
+}
+
+tbody td {
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  text-align: center; 
+}
+
+
+tfoot {
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+}
+
+tfoot th {
+  padding: 10px; /* Espaçamento interno nas células do rodapé */
+  border: 1px solid #fff; /* Borda branca nas células do rodapé */
+}

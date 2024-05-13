@@ -1,0 +1,149 @@
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+.menu-principal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-principal li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu-principal li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu-principal li a:hover {
+  color: #007bff;
+}
+
+
+.informacoes-contato {
+  text-align: right;
+}
+
+.informacoes-contato p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-principal {
+    margin-top: 20px;
+  }
+
+  .informacoes-contato {
+    text-align: center;
+  }
+}
+
+.container {
+  background-color: aliceblue;
+}
+
+.imagem-container {
+  position: relative;
+}
+
+.imagem-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.conteudo {
+  font-family: Cambria, serif;
+  font-size: 20px;
+  text-align: right;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1,
+#h1-header {
+  color: dimgrey;
+}
+
+.conteudo:hover {
+  background-color: #333;
+  color: aliceblue;
+}
+
+p {
+
+  font-family: Garamond, Times New Roman, Bookman Old Style, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-image: url('https://img.criativodahora.com.br/2023/10/MTIvMTAvMjAyMyAxNmgzOA==65284b3662f3f.jpeg');
+  background-repeat: repeat;
+}
+
+.footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer .mar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}

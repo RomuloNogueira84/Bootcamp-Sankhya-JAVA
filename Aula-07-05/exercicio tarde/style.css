@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://i.uai.com.br/vtfCvvSDNO6vXYTHaAyaBlJdziA=/750x0/imgsapp2.uai.com.br/app/noticia_133890394703/2022/06/07/287044/capa-da-hq-dark-crisis-01_1_139301.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside {
+  flex: 20%;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+main {
+  font-size: 30px;
+  flex: 60%;
+  background: linear-gradient(to right, rgba(0,255,0,0), rgba(0,255,0,1));
+}
+
+/* Animação */
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+aside, main {
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+}

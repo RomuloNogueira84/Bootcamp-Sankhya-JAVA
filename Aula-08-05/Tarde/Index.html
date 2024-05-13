@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action="#">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade">
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" placeholder="Digite uma mensagem"></textarea>
+    <button>Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button">Reportar</button>
+  <!--Grupo de botões-->
+    <input type="radio">
+    <input type="checkbox">
+    <select ><option></option></select>
+    <label for="sexo">Sexo:</label>
+    <input type="radio" name="sexo" id="sexo" value="Masculino">Masculino
+    <input type="radio" name="sexo" id="sexo" value="Feminino">Feminino
+
+    <label for="esporte" name="esporte">Esportes Praticados</label>
+    <input type="checkbox" name="esporte" value="esportes">Natação
+    <input type="checkbox" name="esporte" value="esportes">Futebol
+    <input type="checkbox" name="esporte" value="esportes">Volei
+    <input type="checkbox" name="esporte" value="esportes">Basquete
+    <hr>
+    <select name="estado">
+      <option value="SP">São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="ES">Espirito Santo</option>
+      <option value="MT">Mato Grosso</option>
+      <option value="MS">Mato Grosso do Sul</option>
+      <option value="GO">Goias</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="PR">Paraná</option>
+      <option value="SC">Santa Catarina</option>
+
+      <hr>
+      <label for="cpf">CPF</label>
+      <input type="text" id="cpf" pattern="[0-9]{3}\.[0-9]{3}\-[0-9{2}]"required>
+            
+
+    </select>
+  </form>
+</body>
+</html>

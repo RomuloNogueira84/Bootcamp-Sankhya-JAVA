@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Matrícula de Alunos</title>
+</head>
+
+<body>
+
+  <h2>Formulário de Matrícula de Alunos</h2>
+
+  <form action="#">
+    <table>
+      <tr>
+        <th>Rótulo</th>
+        <th>Campo</th>
+        <th>Tipo de Entrada</th>
+        <th>Obrigatório</th>
+      </tr>
+      <tr>
+        <td>Nome completo:</td>
+        <td><input type="text" id="nome" name="nome" required></td>
+        <td>text</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>Data de nascimento:</td>
+        <td><input type="date" id="data_nascimento" name="data_nascimento" required></td>
+        <td>date</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>Gênero:</td>
+        <td>
+          <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+        </td>
+        <td>select</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>Endereço completo:</td>
+        <td><input type="text" id="endereco" name="endereco" required></td>
+        <td>text</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>E-mail:</td>
+        <td><input type="email" id="email" name="email" required></td>
+        <td>email</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>Número de telefone:</td>
+        <td><input type="tel" id="telefone" name="telefone" required></td>
+        <td>tel</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>Curso desejado:</td>
+        <td><input type="text" id="curso" name="curso" required></td>
+        <td>text</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>Período de matrícula:</td>
+        <td>
+          <select id="periodo_matricula" name="periodo_matricula" required>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </td>
+        <td>select</td>
+        <td>Sim</td>
+      </tr>
+      <tr>
+        <td>Observações adicionais (opcional):</td>
+        <td><textarea id="observacoes" name="observacoes"></textarea></td>
+        <td>textarea</td>
+        <td>Não</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Registrar Matrícula"></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+
+</html>
