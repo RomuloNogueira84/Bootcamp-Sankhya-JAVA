@@ -96,7 +96,7 @@ p{
   width: auto;
 }
 .btn-create-account:hover{
-
+  background-color: var(--color-verde2);
 }
 h1{
   color:var(--color-azul);
