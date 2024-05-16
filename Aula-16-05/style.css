@@ -1,0 +1,56 @@
+/* BOX SHADOW 
+    - h-shadow (especifica o deslocamento horizontal da sombra em relação ao elemento.)
+    - v-shadow (especifica o deslocamento vertical da sombra em relação ao elemento.)
+    - blur (opcionalmente, define o desfoque da sombra. Quanto maior o valor, mais borrada a sombra) 
+    - spread (opcionalmente, define o alargamento ou encolhimento da sombra.)
+    - color (especifica a cor da sombra)
+    - inset (opcionalmente, define se a sombra deve ser interna (inset) ou externa (omitid
+- inset (opcionalmente, define se a sombra deve ser interna (inset) ou externa (omitido ou definido como padrão).
+
+div{
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  box-shadow: inset 0px 0px 4px 2px rgba(13, 10, 239, 0.3), 2px 2px 4px 2px rgba(13, 10, 239, 0.3);
+}
+*/
+body{
+  background-image: url(https://aventurasnahistoria.uol.com.br/media/_versions/curiosidades/alegria_windows_xp_widemd.jpg);
+  background-repeat:no-repeat;
+  background-position:40px 50px;
+  background-size: cover;
+}
+.div1 {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-color: #f4f4f4;
+  position: relative;
+  animation: shadow-pulse 1s infinite;
+}
+.div2{
+  width: 150px;
+  height: 150px;
+  margin: 40px;
+  background-color: #f27b7b;
+  position: relative;
+  animation: shadow-pulse 1.5s infinite;
+}
+.div3{
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-color: #503f88;
+  position: relative;
+  animation: shadow-pulse 1.8s infinite;
+}
+
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(127, 41, 41, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
