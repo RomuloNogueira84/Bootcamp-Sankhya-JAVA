@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+html{
+  width: 100vw;
+  overflow-x: hidden;
+}
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    border: 1px solid #333;
+    background: linear-gradient(to right, #ff7e5f, #feb47b,bisque);
+}
+#inicio{
+    font-family: "Rubik Microbe", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5.5rem; 
+    color: linear-gradient(#8e4807,#8e0404,rgb(111, 63, 3)); 
+    text-align: center;
+    padding: 20px; 
+    margin-bottom: 30px;
+    text-shadow: 4px 8px 16px #000000; 
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+    
+}
+
+nav {
+    
+  box-shadow: 2px 4px 8px 0 rgba(143, 143, 143, 0.2);
+  background-color: #636262;
+  color: #eaeaea;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-textura-abstrata_91008-369.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1715644800&semt=ais_user);
+  background-repeat: repeat;
+}
+.content-info{
+  width:600px;
+  margin: 30px;
+}
+.content-foto{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+  
+}
+.content-img-logo{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 45%;
+  box-shadow: rgb(0 0 0 /10%) 0px 2px 4px, rgb(0 0 0 /10%) 0px 8px 16px;
+}
+
+.card1, .card2, .card3 {
+  flex: 1 0 auto;
+  margin: 20px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left; 
+}
+
+.card1 img, .card2 img, .card3 img {
+  width: 350px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 45%; 
+}
+
+.card1 h3, .card2 h3, .card3 h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card1 p, .card2 p, .card3 p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card1 {
+  background-color: #f5f5f5; 
+}
+
+.card2 {
+  background-color: #f0f0f0; 
+}
+
+.card3 {
+  background-color: #e5e5e5; 
+}
+
+
+@media (max-width: 768px) {
+  .card1, .card2, .card3 {
+    flex-direction: column; 
+  }
+
+  .card1 img, .card2 img, .card3 img {
+    width: 100%; 
+  }
+}
+.footer {
+  font-size: large;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b,bisque);
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.footer:hover {
+  color: #ff6347;
+  text-shadow: 2px 2px 4px #000000;
+}
+
