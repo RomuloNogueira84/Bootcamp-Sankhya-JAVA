@@ -27,12 +27,12 @@
 //     console.log(nome[i]);
 // }
 
-let texto = "Soulcode";
-let resultado = "";
-for (let i=texto.length-1; i>=0;i--){
+let texto1 = "Soulcode";
+let resultado1 = "";
+for (let i=texto1.length-1; i>=0;i--){
     resultado += texto[i];
 }
-console.log(resultado);
+console.log(resultado1);
 
 
 // console.log(Array.from(texto).join(' - '));
@@ -62,17 +62,17 @@ console.log(resultado);
 
 
 // MÉTODOS
-let pet = "Chloe";
+let pet1 = "Chloe";
 console.log(pet.toLowerCase()); //chloe
 console.log(pet.toUpperCase()); //CHLOE
 
-let arquivo = 'musica.mp3';
+let arquivo1 = 'musica.mp3';
 // Verificar se a string termina com a palavra
-console.log(arquivo.endsWith('.mp3'));
+console.log(arquivo1.endsWith('.mp3'));
 // Verificar se a string inicia com a palavra
-console.log(arquivo.startsWith('mus'));
+console.log(arquivo1.startsWith('mus'));
 
-let frase = "Eu comi arroz, batata e carne";
+let frase1 = "Eu comi arroz, batata e carne";
 // Buscar se uma frase inclui um trecho
 // console.log(frase.includes("FRASE"));
 // let trecho1 = 'arroz';
@@ -105,7 +105,7 @@ let frase = "Eu comi arroz, batata e carne";
 
 // ARRAYS
 
-let figuras = ["coração", "ok", "joinha", "sorriso", "não"];
+//let figuras1 = ["coração", "ok", "joinha", "sorriso", "não"];
 // console.log(figuras);
 // console.log(figuras[4]);
 // figuras[2] = "Legal";
@@ -132,8 +132,8 @@ for(let [index, fig] of figuras.entries()){
 //     console.log(index, element);
 // }
 
-let obj = {a:1, b:2, c:3};
-let arrayTeste = Object.entries(obj);
+//let obj = {a:1, b:2, c:3};
+//let arrayTeste = Object.entries(obj);
 console.log(arrayTeste);
 
 for(let [key, value] of arrayTeste){
@@ -174,18 +174,18 @@ for(let [key, value] of arrayTeste){
 //     return nome.toUpperCase() + "!";
 // });
 // console.log(letraCxAlta)
-
+/*
 const fs = require('fs');
 
-let temps = [29, 5, 10, -4, 15, -20];
-let tempsPositivas = temps.filter((temp)=>{
+let temps1 = [29, 5, 10, -4, 15, -20];
+let tempsPositivas1 = temps.filter((temp)=>{
     if(temp > 0){
         return true;
     }else{
         return false;
     }
 });
-console.log(tempsPositivas);
+console.log(tempsPositivas1);
 
 let tempsPositivas2 = temps.filter((temp) => temp > 0);
 tempsPositivas2.sort((a,b) => a -b);
