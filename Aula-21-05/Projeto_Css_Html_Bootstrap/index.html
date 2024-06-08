@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Douglas Ferreira, Karolina Meira, Neto Russo e Romulo Nogueira">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <title>BB-8 || A Sua Loja Geek!</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="banner.css">
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <Header class="cabeca">
+
+    <div class="cabecaMenu">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary cabecaBarraMenu">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#home"><img src="assets/img/bb8_logo.png" alt="logo da BB-8 Geek"
+              class="menuLogo"></a>
+          <div class="juntos">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu-nav" style="height: auto; min-height: 40px;">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link menuLink" href="#sobre">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuLink" href="#produtos">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuLink d-flex" href="#carrinho" data-toggle="modal"
+                      data-target=".bd-example-modal-lg">
+                      <div class="image-icon">
+                        <img src="assets/img/icon carrinho.png" alt="icone de carrinho" class="iconCarrinho" />
+                        <div id="alertaIconCarrinho" class="info-carrinho ocultarIcon">
+                          <p class="info-carrinho-p">!</p>
+                        </div>
+                      </div>
+                      Meu Pedido
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuLink" href="#contato">Contatos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="cabecaBanner" id="home">
+      <div class="bannerConteudo">
+        <div class="bannerBlocoChamada">
+          <h1 class="bannerTitulo">BB-8 Geek ||<br />Venha para o nosso lado da força!</h1>
+          <a class="chamadaBtn" href="#produtos">
+            <div class="espada01Btn"></div>
+            Lumos
+            <div class="espada02Btn"></div>
+          </a>
+        </div>
+        <div class="bannerBlocoLogo">
+          <img src="assets/img/bb8_logo_branco.png" alt="logo do BB-8 geek" class="logoBanner">
+        </div>
+      </div>
+
+      <div class="bannerBack">
+        <video autoPlay muted loop class="video">
+          <source src="assets/video/gameLaranja.mp4" type="video/mp4" />
+        </video>
+        <div class="bb8" id="corpo">
+          <div class="antennas" id="antena">
+            <div class="antenna short"></div>
+            <div class="antenna long"></div>
+          </div>
+          <div class="head" id="cabeca">
+            <div class="stripe one"></div>
+            <div class="stripe two"></div>
+
+            <div class="eyes" id="olhos">
+              <div class="eye one"></div>
+              <div class="eye two"></div>
+            </div>
+            <div class="stripe detail" id="detalhe">
+              <div class="detail zero"></div>
+              <div class="detail zero"></div>
+              <div class="detail one"></div>
+              <div class="detail two"></div>
+              <div class="detail three"></div>
+              <div class="detail four"></div>
+              <div class="detail five"></div>
+              <div class="detail five"></div>
+            </div>
+            <div class="stripe three"></div>
+          </div>
+          <div class="ball" id="bola">
+            <div class="lines one"></div>
+            <div class="lines two"></div>
+            <div class="ring one"></div>
+            <div class="ring two"></div>
+            <div class="ring three"></div>
+          </div>
+          <div class="shadow"></div>
+        </div>
+      </div>
+    </div>
+
+  </Header>
+
+  <main class="principal">
+    <section aria-label="promocao" class="preludio">
+      <div class="preludioContainer">
+        <div class="preludioConteudo">
+          <div class="preludioBoxImagem">
+            <img src="assets/img/itensModura.png" alt="Itens geek da BB-8 Geek" class="preludioImg">
+          </div>
+          <div class="preludioBoxTextos">
+            <h2 class="preludioTitulo"> Descubra a BB-8 GEEK</h2>
+            <hr class="preludioTextosDetalhe">
+            <p class="preludioTexto">Você é apaixonado por cultura geek? Então, prepare-se para uma aventura incrível no
+              universo da BB-8 Geek, a loja definitiva para todos os fãs de filmes, séries, quadrinhos e games! Aqui, na
+              BB-8 Geek, transformamos seu amor pela cultura pop em uma experiência de compra inesquecível.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sobre" id="sobre" aria-label="Sobre a história da BB-8 Geek">
+      <div class="sobreContainer">
+        <div class="sobrebanner">
+          <img src="assets/img/bannerSobre.png" alt="Imagem com referências geek" class="sobrebannerImg">
+        </div>
+
+        <div class="accordion sobreSanfona" id="accordionPanelsStayOpenExample">
+
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed sobreSanfonaItem" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseOne">
+                Bem-vindo à BB-8Geek!
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+              <div class="accordion-body sobreSanfonaInterno">
+                <p class="sanfonaTexto">
+                  A BB8Geek não é apenas uma loja, é um universo dedicado à cultura geek em todas as suas formas. Somos
+                  mais do que um ponto de venda, somos um espaço onde a paixão pela cultura geek é celebrada, apreciada
+                  e compartilhada.
+                  <br>
+                  Nossa equipe é composta por entusiastas apaixonados que vivem e respiram a cultura geek. Cada membro
+                  traz consigo um amor profundo e conhecimento vasto sobre diferentes aspectos da cultura geek.
+                  Trabalhamos juntos para oferecer uma seleção diversificada de produtos que abraçam e celebram a
+                  cultura nerd.
+                  <br>
+                  Nossa gama de produtos é cuidadosamente selecionada para atender a todos os aspectos da cultura geek.
+                  Desde colecionáveis exclusivos até itens essenciais para qualquer fã geek. Seja qual for o seu
+                  interesse, temos algo que irá capturar sua imaginação e permitir que você expresse sua paixão.
+                  <br>
+                  Na BB8Geek, entendemos que ser um geek é um estilo de vida. Nos esforçamos para fornecer tudo o que
+                  você precisa para viver sua vida geek ao máximo. Seja você um fã de quadrinhos, um gamer ávido, um
+                  amante de filmes de ficção científica ou simplesmente alguém que aprecia a cultura geek, temos algo
+                  especial para você.
+                  <br>
+                  Venha explorar o universo BB8Geek e descubra um mundo onde a cultura geek é celebrada em todas as suas
+                  formas. Estamos ansiosos para compartilhar nossa paixão com você.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed sobreSanfonaItem" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Nossa Missão
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body sobreSanfonaInterno">
+                <p class="sanfonaTexto">
+                  Na BB8Geek, nossa missão vai além do comércio. Queremos tornar sua jornada pelo mundo geek ainda mais
+                  emocionante, sendo seu guia confiável nesta aventura. Oferecemos não apenas produtos, mas também
+                  experiências que enriquecem sua vida geek.
+                  <br>
+                  Acreditamos que cada geek é único, assim como sua jornada geek. Seja fã de quadrinhos, gamer ávido,
+                  amante de filmes de ficção científica ou simplesmente alguém que aprecia a cultura geek, queremos
+                  tornar sua experiência conosco tão única quanto você.
+                  <br>
+                  Nossa missão é fornecer os recursos que você precisa para explorar, aprender e crescer dentro do seu
+                  universo geek. Desde colecionáveis exclusivos até itens essenciais do dia a dia, nos esforçamos para
+                  oferecer uma variedade de produtos que permitem que você expresse sua paixão da maneira que desejar.
+                  <br>
+                  Mas nossa missão vai além dos produtos. Queremos criar uma comunidade onde geeks de todos os tipos
+                  possam se reunir, compartilhar suas paixões e aprender uns com os outros. Acreditamos que, ao fazer
+                  isso, podemos tornar o mundo geek um lugar ainda mais emocionante para se estar.
+                  <br>
+                  Então, seja qual for sua paixão, estamos aqui para apoiá-lo em sua jornada. Junte-se a nós na BB8Geek
+                  e vamos explorar o universo geek juntos!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed sobreSanfonaItem" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Explore com a gente
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body sobreSanfonaInterno">
+                <p class="sanfonaTexto">
+                  Na BB8Geek, acreditamos que a cultura geek é uma jornada, e convidamos você a se juntar a nós enquanto
+                  exploramos os limites da galáxia geek. <br>
+                  Não importa se você é um fã de quadrinhos, um gamer ávido, um amante de filmes de ficção científica ou
+                  simplesmente alguém que aprecia a cultura geek, temos algo especial para você. <br>
+                  Nossa exploração não se limita apenas a produtos. Vamos além, explorando histórias, personagens,
+                  universos e ideias que formam a base da cultura geek. <br>
+                  Queremos compartilhar com você as últimas notícias, tendências e inovações do mundo geek. Queremos ser
+                  sua fonte confiável de informações e recursos geek. <br>
+
+                  A BB8Geek é mais do que uma loja, é uma comunidade. Uma comunidade de pessoas que compartilham uma
+                  paixão comum pela cultura geek. <br>
+                  Convidamos você a se juntar a nós, compartilhar sua paixão e fazer parte da nossa crescente família
+                  geek. <br>
+                  Queremos criar um espaço onde você possa expressar sua paixão, compartilhar suas ideias e
+                  experiências, e aprender com outros geeks. <br>
+
+                  Então, venha, junte-se a nós na BB8Geek. Vamos explorar juntos o universo geek, descobrir novos
+                  mundos, compartilhar nossas paixões e celebrar a cultura geek em todas as suas formas. <br>
+                  Estamos ansiosos para embarcar nesta jornada emocionante com você!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="produtos" id="produtos" aria-label="Veja nossos produtos">
+
+      <div class="produtosContainer">
+
+        <div class="produtosTextos">
+          <h2 class="produtosTitulo">
+            Seleção Impecável de Produtos
+          </h2>
+          <p class="produtosTexto">
+            Nossa seção está repleta de itens exclusivos e colecionáveis que vão fazer qualquer geek vibrar. Desde
+            camisetas temáticas até action figures e acessórios, temos tudo o que você precisa para expressar sua
+            paixão.
+          </p>
+        </div>
+
+        <div class="produtosCardsContainer">
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbKJijTa0O8onXVzNZSXGmu6DXgxiqrLaG_yGznRztW556oD4zx9hGekG7fyyGJER4x0-48SEuJXt2PfrfgndSOcR5OvIypex4"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">CAMISA FULL PRINT</h5>
+                <p class="card-text cardTexto">
+                  BLUE MANGÁ KIMETSU NO YAIBA - OBANAI IGURO
+                </p>
+                <button type="button" id="1" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 79,90</span>
+                  <p>R$ 59,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaGYb5OsGiPisxRPLPy6ss84YIKwtGGt_QNRJTTLM-pvYgXMNir-SH1MBt8SJIAteQyYTUlQukBfYDeAQE8k2uQ2YpehZkmvUU"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">CAMISA SILK</h5>
+                <p class="card-text cardTexto">
+                  Doctor Who Tardis Daleks Davros Cybermen Séries
+                </p>
+                <button type="button" id="2" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 69,90</span>
+                  <p>R$ 49,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ1YElc10nnbFcmjhyuznURAusEa1jpNGJrFkvvgJIQvjwlgVdezC4hqmapF0drq5KH-LoYjZ-OMreJIOvHwIiVKKUvfGUDsVw"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">CAMISA SILK</h5>
+                <p class="card-text cardTexto">
+                  Game of Thrones- 3 Brasões das casas!
+                </p>
+                <button type="button" id="3" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 89,90</span>
+                  <p>R$ 69,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYDJE_UcNOI0kRdGJcO2Kn541MuGguBCCMdZ2kx4lHgA4KxvzrQfFsyRR0sP9HUFJPGsyf2FGosiPQyTepujRqlehbweHll2l0"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">CAMISA SILK</h5>
+                <p class="card-text cardTexto">
+                  Bazinga!<br />
+                  Big bang Theory
+                </p>
+                <button type="button" id="4" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 89,90</span>
+                  <p>R$ 69,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYoeoXnE7iXBaCGeIZtQ6wGSY5huvlDgqQLkDWVWQTvhFJik1VzXyJGvt5-00Q4lngK4Eh3pbptLzOeP4V_IgiEgtarAaG_STQ"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Chapéu de Palha</h5>
+                <p class="card-text cardTexto">
+                  Maedack Luffy Chapéu de palha protetor solar- chapéu de
+                  palha cosplay chapéu de sol para adultos
+                </p>
+                <button type="button" id="5" class="btn btn-primary cardBtn" id="5">
+                  <span class="cardBtnDetalhe">de R$ 90,00</span>
+                  <p>R$ 69,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYFf8K8bOyVgQa84icbjR5bcm2ZYArR-1gtJCJndYgboC5zfhuwVO2mvxnhLVrFAA-qe5xUMknZ6jjdzenluCGYjm0qCaAn3w"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Canecas Personalizadas</h5>
+                <p class="card-text cardTexto">
+                  Caneca personalizada: presenteie quem você ama com um toque
+                  especial! 😍☕
+                </p>
+                <button type="button" id="6" class="btn btn-primary cardBtn"
+                  style="justify-content: center; align-items: center">
+                  <p style="text-align: center">a partir de R$ 44,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ_uh6GpYRqnC3MeKFKuB7oCgbEp9n7lTaUVZ-O5ogISQlqswxVuq3Sf_UyNUtOtaiADVGy84skFs23Y9WXbxNQyfMosWFGzBg"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Action Figure</h5>
+                <p class="card-text cardTexto">
+                  Star Wars Hasbro The Vintage Collection: OBI-WAN Kenobi -
+                  Darth Vader (The Dark Times)
+                </p>
+                <button type="button" id="7" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 358,77</span>
+                  <p>R$ 232,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaCuxOPWhlBIJeo_pW_RkxyVEEbZvGydk9Bmafqd_d_YuEQTB_-D3F9X93X97JW86UJroArP8Tq85niyPyMF8ZRcy7ygOh-bpM"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Action Figure</h5>
+                <p class="card-text cardTexto">
+                  DEADPOOL - GALLERY-Um lançamento da Diamond Select! O Merc
+                  With a Mouth é agora um Merc of Art!
+                </p>
+                <button type="button" id="8" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 1085,00</span>
+                  <p>R$ 519,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbFVC9TXdxQ5ipge0wS8nX1GBIUl6ciVArkohe7YvaKKQfclwJPfpPTInm1Y4I3Ct7wPeebRF9Pd2V1H97dy1tDKfWAoKnWB0Q"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto">
+                  Funko Pop - 02 Batman Comic Cover Vinyl Figure Batman como
+                  POP! Capa de banda desenhada da Funko.
+                </p>
+                <button type="button" id="9" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 159,90</span>
+                  <p>R$ 127,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYIS8PGEvBu8YjVYqcwlyCc3qrRKuX__pK4edhbp3No8ch_t8L54-TqzYw4-ObR936EN42xx2pidYnzR0D4csHVcm0OGi1IEBQ"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto">
+                  Funko Pop-206 Wonder Woman Justice League Figura
+                  colecionável
+                </p>
+                <button type="button" id="10" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 159,90</span>
+                  <p>R$ 127,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaeg4gi2W9UM6DRJQbPsSIUw2yEo-9snjmdMsGEOlppBYsGVVVeXCzFqdWBHDLOFX7x4MjdNwFreoPGGrkKI0YMMZ5iHmfXKw"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto">
+                  Funko Pop -1123 Justice League Superman (First Flight)
+                  Figure (AAA Anime Exclusive)
+                </p>
+                <button type="button" id="11" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 284,99</span>
+                  <p>R$ 198,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard itenProdutos">
+            <div class="card cardPai" style="width: 320px; height: 450px">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZQhtiDOs-_rRLLVsAQV3Q9wA9o35ms-UgCS0yBaZDqhOk5W-aMeAKx3pG9nFrsgR6KwGVQ6QJ4TzsqPWzBrF9bZesjENT1lA"
+                class="card-img-top" alt="..." />
+
+              <div class="card-body cardDescricao" style="bottom: 10px">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto">
+                  Baby with Dean - Funko Pop Rides - Supernatural - 32 - SDCC
+                  2017 Exclusivo
+                </p>
+                <button type="button" id="12" class="btn btn-primary cardBtn">
+                  <span class="cardBtnDetalhe">de R$ 980,00</span>
+                  <p>R$ 479,90</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="produtosCardsContainer">
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbKJijTa0O8onXVzNZSXGmu6DXgxiqrLaG_yGznRztW556oD4zx9hGekG7fyyGJER4x0-48SEuJXt2PfrfgndSOcR5OvIypex4"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">CAMISA FULL PRINT</h5>
+                <p class="card-text cardTexto"> BLUE MANGÁ KIMETSU NO YAIBA - OBANAI IGURO</p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 79,90</span>
+                  <p>R$ 59,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaGYb5OsGiPisxRPLPy6ss84YIKwtGGt_QNRJTTLM-pvYgXMNir-SH1MBt8SJIAteQyYTUlQukBfYDeAQE8k2uQ2YpehZkmvUU"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">CAMISA SILK</h5>
+                <p class="card-text cardTexto"> Doctor Who Tardis Daleks Davros Cybermen Séries</p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 69,90</span>
+                  <p>R$ 49,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ1YElc10nnbFcmjhyuznURAusEa1jpNGJrFkvvgJIQvjwlgVdezC4hqmapF0drq5KH-LoYjZ-OMreJIOvHwIiVKKUvfGUDsVw"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">CAMISA SILK</h5>
+                <p class="card-text cardTexto"> Game of Thrones- 3 Brasões das casas! </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 89,90</span>
+                  <p>R$ 69,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYDJE_UcNOI0kRdGJcO2Kn541MuGguBCCMdZ2kx4lHgA4KxvzrQfFsyRR0sP9HUFJPGsyf2FGosiPQyTepujRqlehbweHll2l0"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">CAMISA SILK</h5>
+                <p class="card-text cardTexto"> Bazinga!<br /> Big bang Theory </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 89,90</span>
+                  <p>R$ 69,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYoeoXnE7iXBaCGeIZtQ6wGSY5huvlDgqQLkDWVWQTvhFJik1VzXyJGvt5-00Q4lngK4Eh3pbptLzOeP4V_IgiEgtarAaG_STQ"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Chapéu de Palha</h5>
+                <p class="card-text cardTexto"> Maedack Luffy Chapéu de palha protetor solar- chapéu de palha cosplay
+                  chapéu de sol para adultos
+                </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 90,00</span>
+                  <p>R$ 69,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYFf8K8bOyVgQa84icbjR5bcm2ZYArR-1gtJCJndYgboC5zfhuwVO2mvxnhLVrFAA-qe5xUMknZ6jjdzenluCGYjm0qCaAn3w"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Canecas Personalizadas</h5>
+                <p class="card-text cardTexto"> Caneca personalizada: presenteie quem você ama com um toque especial!
+                  😍☕ </p>
+                <a href="#" class="btn btn-primary cardBtn" style="justify-content: center; align-items: center;">
+                  <p style="text-align: center;">a partir de R$ 44,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZ_uh6GpYRqnC3MeKFKuB7oCgbEp9n7lTaUVZ-O5ogISQlqswxVuq3Sf_UyNUtOtaiADVGy84skFs23Y9WXbxNQyfMosWFGzBg"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Action Figure</h5>
+                <p class="card-text cardTexto"> Star Wars Hasbro The Vintage Collection: OBI-WAN Kenobi - Darth Vader
+                  (The Dark Times) </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 358,77</span>
+                  <p>R$ 232,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaCuxOPWhlBIJeo_pW_RkxyVEEbZvGydk9Bmafqd_d_YuEQTB_-D3F9X93X97JW86UJroArP8Tq85niyPyMF8ZRcy7ygOh-bpM"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Action Figure</h5>
+                <p class="card-text cardTexto"> DEADPOOL - GALLERY-Um lançamento da Diamond Select! O Merc With a Mouth
+                  é agora um Merc of Art!</p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 1085,00</span>
+                  <p>R$ 519,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbFVC9TXdxQ5ipge0wS8nX1GBIUl6ciVArkohe7YvaKKQfclwJPfpPTInm1Y4I3Ct7wPeebRF9Pd2V1H97dy1tDKfWAoKnWB0Q"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto"> Funko Pop - 02 Batman Comic Cover Vinyl Figure Batman como POP! Capa de
+                  banda desenhada da Funko.
+                </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 159,90</span>
+                  <p>R$ 127,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYIS8PGEvBu8YjVYqcwlyCc3qrRKuX__pK4edhbp3No8ch_t8L54-TqzYw4-ObR936EN42xx2pidYnzR0D4csHVcm0OGi1IEBQ"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto"> Funko Pop-206 Wonder Woman Justice League
+                  Figura colecionável
+                </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 159,90</span>
+                  <p>R$ 127,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaeg4gi2W9UM6DRJQbPsSIUw2yEo-9snjmdMsGEOlppBYsGVVVeXCzFqdWBHDLOFX7x4MjdNwFreoPGGrkKI0YMMZ5iHmfXKw"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto">Funko Pop -1123 Justice League Superman (First Flight) Figure (AAA Anime
+                  Exclusive)
+                </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 284,99</span>
+                  <p>R$ 198,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="produtosCard">
+            <div class="card cardPai" style="width: 320px; height: 450px;">
+              <img
+                src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihZQhtiDOs-_rRLLVsAQV3Q9wA9o35ms-UgCS0yBaZDqhOk5W-aMeAKx3pG9nFrsgR6KwGVQ6QJ4TzsqPWzBrF9bZesjENT1lA"
+                class="card-img-top" alt="...">
+
+              <div class="card-body cardDescricao" style="bottom: 10px;">
+                <h5 class="card-title cardTitulo">Funko Pop!</h5>
+                <p class="card-text cardTexto"> Baby with Dean - Funko Pop Rides - Supernatural - 32 - SDCC 2017
+                  Exclusivo
+                </p>
+                <a href="#" class="btn btn-primary cardBtn"><span class="cardBtnDetalhe">de R$ 980,00</span>
+                  <p>R$ 479,90</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div> -->
+
+        <div class="produtosTextosFinal">
+          <h3 class="tituloFinal">Não encontrou o que procurava?</h3>
+          <p class="produtosFinalTexto">
+            Podemos encomendar para você, nossos <em>GeekHunters</em> é especializada para localizar os melhores
+            produtos GEEK com fornecedores oficiais!
+          </p>
+          <a href="#contato" class="produtosFinalBtn">
+            <p>Entre em contato</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoimentos" id="depoimentos" aria-label="Depoimentos de nossos clientes">
+      <div class="depoimentosContainer">
+
+        <div id="carouselExampleRide" class="carousel slide carrosselCompleto" data-bs-ride="true">
+
+          <div class="carousel-inner carrosselInterno">
+
+            <div class="carousel-item active">
+              <img src="assets/img/carrossel/01.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/carrossel/02.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/carrossel/03.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/carrossel/04.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/carrossel/05.png" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/carrossel/06.png" class="d-block w-100" alt="...">
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+          </button>
+          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleRide"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contato" class="contato" aria-label="Contatos do BB-8 Geeks">
+
+      <div class="contatosAjuste">
+
+        <h3 class="contatosTitulo">Tem alguma dúvida? Estamos aqui para te ajudar!</h3>
+
+        <div class="contatoContainer">
+
+          <div class="contatoFormulario">
+            <form class="formularioContatos">
+
+              <div class="mb-3">
+                <label for="nome" class="form-label textoFormInput">Nome:*</label>
+                <input type="text" class="form-control formInput inputNome" name="nome" id="nome"
+                  placeholder="Qual o seu nome?" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label textoFormInput">E-mail:*</label>
+                <input type="email" class="form-control formInput inputEmail" name="email" id="email"
+                  placeholder="Qual o seu email?" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="telefone" class="form-label textoFormInput">whatsapp:*</label>
+                <input type="telefone" class="form-control formInput inputTelefone" name="telefone" id="telefone"
+                  placeholder="Qual o seu whatsapp?" minlength="11" maxlength="12">
+              </div>
+
+              <div class="areaMensagem">
+                <label for="mensagem" class="form-label textoFormInput">Mensagem:</label>
+                <textarea type="textarea" class="inputMensagem" name="mensagem" id="mensagem"
+                  placeholder="Me conte tudo..."></textarea>
+              </div>
+              <input class="btn btn-primary formularioBtn" type="submit" value="enviar">
+            </form>
+          </div>
+
+          <div class="contatosDados">
+            <div class="contatosDadosEndereco">
+
+              <div class="contatosLocalizacaoBox contatosBox">
+                <img src="assets/img/enderecoIcon.png" alt="icon de gps" class="contatosLocalizacaoIcon dadosIcon">
+                <p class="contatosLocalizacao contatosDadosTexto">
+                  Rua Alfeneiros, 04, B. Dos Limoeiros. <br />
+                  Townsville -Springfield.
+                </p>
+              </div>
+
+              <div class="contatosTelefoneBox contatosBox">
+                <img src="assets/img/telefoneIcon.png" alt="icon de Telefone" class="contatosTelefoneIcon dadosIcon">
+                <p class="contatosTelefone contatosDadosTexto">
+                  +1 (816) 866-907-3235
+                </p>
+              </div>
+
+              <div class="contatosEmailBox contatosBox">
+                <img src="assets/img/emailIcon.png" alt="icon de Email" class="contatosTelefoneIcon dadosIcon">
+                <p class="contatosEmail contatosDadosTexto">
+                  <u><em>contato@bb-8geek.com</em></u>
+                </p>
+              </div>
+
+            </div>
+            <div class="contatosFaq">
+              <h4 class="tituloFaq">
+                F.A.Q.
+              </h4>
+
+              <div id="carouselExampleControls" class="carousel slide carrosselFaq" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active">
+                    <div class="slideFaq01 slideFaqImpar slideFaq">
+                      <h4 class="slideFaqTitulo">1. O que é a BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">Loja especializada com seleção diversa de produtos para celebrar o
+                        universo nerd. Seja bem-vindo(a)👓</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="slideFaq02 slideFaqPar slideFaq">
+                      <h4 class="slideFaqTitulo">2. Qual é a missão da<br /> BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">Nossa missão é enriquecer sua jornada geek. Com colecionáveis exclusivos
+                        e itens essenciais, temos tudo para expressar sua paixão geek.✨</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="slideFaq03 slideFaqImpar slideFaq">
+                      <h4 class="slideFaqTitulo">3. Como posso explorar o universo geek com a <br />BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">Venha conosco explorar a galáxia geek! Seja fã de quadrinhos, gamer,
+                        amante de filmes de ficção científica ou apreciador da cultura geek, temos algo especial para
+                        você.🤓</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="slideFaq04 slideFaqPar slideFaq">
+                      <h4 class="slideFaqTitulo">4. Como posso me juntar à comunidade BB-8 Geek?</h4>
+                      <p class="slideFaqTexto">A BB-8 Geek, mais que uma loja, é uma comunidade. Junte-se a nós,
+                        compartilhe sua paixão e faça parte da nossa família geek em crescimento🎮 </p>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+            </div>
+          </div>
+    </section>
+
+    <div class="modal fade show bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true" id="exampleModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Meu Pedido</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive-sm">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Qtd</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="corpoTabela">
+                </tbody>
+              </table>
+              <hr>
+              <h5>Valor Total: </h5>
+              <p id="valor">R$ 0,00</p>
+              <button type="button" class="btn botao-caixa" id="botao-caixa" data-dismiss="modal" aria-label="Close">Ir
+                para o caixa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="rodape" id="rodape" aria-label="Roda Pé com informações gerais da BB-8 Geek">
+    <div class="rodapeAjuste">
+      <div class="rodapeContainer">
+        <div class="rodapeBloco1 rodapeBloco">
+          <img src="assets/img/bb8_logo_branco.png" alt="logo do BB-8 Geek" class="rodapeLogo">
+          <p class="rodapeBloco1Texto">
+            Aqui o único limite é a sua imaginação...<br />e o nosso estoque.
+          </p>
+        </div>
+
+        <div class="rodapeBloco2 rodapeBloco">
+
+          <div>
+            <p class="newsTexto">Quer ter acesso a conteúdos especiais e promoções imperdíveis?</p>
+            <form action="#" class="formNew">
+              <div class="input-group mb-3 blocoDeAssinatura">
+                <div class="input-group-text">
+                  <input class="form-check-input mt-0" type="checkbox" value=""
+                    aria-label="Checkbox for following text input">
+                </div>
+                <input type="email" class="form-control newEmail" placeholder="Digite aqui o seu email"
+                  aria-label="Text input with checkbox">
+              </div>
+              <button class="btn btn-primary newBtn" type="reset">Assinar</button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="rodapeBloco3 rodapeBloco">
+          <div class="instaLink">
+            <div class="redeLogo"></div>
+            <p class="redeTexto">Intagram da BB-8 Geek</p>
+          </div>
+        </div>
+      </div>
+      <p class="rodapeTextoFeito">
+        Mau feito, Feito!
+      </p>
+    </div>
+    <div class="rodapeFIm">
+      <p class="rodapeFimCopy"> Todos os direitos reservados || BB-8 Geek &copy; 2024 || 00.000.000/0001-00</p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+
+  <script src="banner.js"></script>
+
+  <script src="carrinho.js"></script>
+
+</body>
+
+</html>
