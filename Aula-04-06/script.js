@@ -1,4 +1,4 @@
-// // STRING
+/*/ // STRING
 
 // /**
 
@@ -26,14 +26,14 @@
 // for (let i=0; i < nome.length; i++){
 //     console.log(nome[i]);
 // }
-
+/*
 let texto1 = "Soulcode";
 let resultado1 = "";
 for (let i=texto1.length-1; i>=0;i--){
     resultado += texto[i];
 }
 console.log(resultado1);
-
+*/
 
 // console.log(Array.from(texto).join(' - '));
 
@@ -61,7 +61,7 @@ console.log(resultado1);
 // console.log(resultado2);
 
 
-// MÉTODOS
+/* MÉTODOS
 let pet1 = "Chloe";
 console.log(pet.toLowerCase()); //chloe
 console.log(pet.toUpperCase()); //CHLOE
