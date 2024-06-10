@@ -1,3 +1,4 @@
+console.log("corrigido")
 /*/ // STRING
 
 // /**
@@ -206,7 +207,8 @@ fs.writeFile('resultado.txt', resultadoX, (err)=>{
 // /**
 
 
-// /**
+// /**novidade
+
 //  * posição
 //  * 1 2 3 4 5 6 7 8 9 10 
 //  * J A V A S C R I P T
