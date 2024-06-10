@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Carrinho de Compras</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+
+      background-image: url('https://img.freepik.com/fotos-gratis/close-up-de-uma-parede-texturizada-de-marmore-branco_53876-139849.jpg?t=st=1718030243~exp=1718033843~hmac=f1fdb25dca89fefd3037b2e0622560c6a048cd0cf380760f3cc6ea1edca9b9fa&w=996');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1.0;
+    }
+
+    #lista-produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .item-produto {
+      margin: 10px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+      transition: transform .2s;
+    }
+
+    .item-produto:hover {
+      transform: scale(1.1);
+    }
+
+    .item-produto img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    #carrinho-compras {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #carrinho-compras h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .itens-carrinho {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .itens-carrinho li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .itens-carrinho img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      border: 1px solid gray;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: lightgray;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+  
+    <img src="./Banner para loja online frete grátis mercado shops médio.png" width="100%" alt="">
+  </header>
+  <hr>
+  <h1>Seu Carrinho de Compras</h1>
+
+  <section id="lista-produtos">
+  </section>
+
+  <section id="carrinho-compras">
+    <h2>Carrinho de Compras</h2>
+    <ul class="itens-carrinho">
+    </ul>
+    <p class="total">Total: R$0,00</p>
+  </section>
+
+  <script>
+    const produtos = [
+      { id: 1, nome: "Camisa", preco: 10.00, imagem: "imagem-camisa.jpg" },
+      { id: 2, nome: "Calça", preco: 25.00, imagem: "imagem-calca.jpg" },
+      { id: 3, nome: "Tênis", preco: 50.00, imagem: "https://img.freepik.com/fotos-gratis/close-up-de-uma-parede-texturizada-de-marmore-branco_53876-139849.jpg?t=st=1718030243~exp=1718033843~hmac=f1fdb25dca89fefd3037b2e0622560c6a048cd0cf380760f3cc6ea1edca9b9fa&w=996" },
+    ];
+
+    const listaProdutos = document.getElementById("lista-produtos");
+    const itensCarrinho = document.querySelector(".itens-carrinho");
+    const totalCarrinho = document.querySelector(".total");
+
+    produtos.forEach(produto => {
+      const itemProduto = document.createElement("div");
+      itemProduto.classList.add("item-produto");
+
+      const imagemProduto = document.createElement("img");
+      imagemProduto.src = produto.imagem;
+      imagemProduto.alt = produto.nome;
+
+      const nomeProduto = document.createElement("h3");
+      nomeProduto.textContent = produto.nome;
+
+      const precoProduto = document.createElement("p");
+      precoProduto.classList.add("preco");
+      precoProduto.textContent = `R$ ${produto.preco.toFixed(2)}`;
+
+      const botaoAdicionar = document.createElement("button");
+      botaoAdicionar.textContent = "Adicionar ao Carrinho";
+      botaoAdicionar.dataset.id = produto.id;
+
+      itemProduto.appendChild(imagemProduto);
+      itemProduto.appendChild(nomeProduto);
+      itemProduto.appendChild(precoProduto);
+      itemProduto.appendChild(botaoAdicionar);
+
+      listaProdutos.appendChild(itemProduto);
+    });
+
+    const botoesAdicionar = document.querySelectorAll("#lista-produtos button");
+
+    botoesAdicionar.forEach(botao => {
+      botao.addEventListener("click", () => {
+        const idProduto = parseInt(botao.dataset.id);
+        const produto = produtos.find(produto => produto.id === idProduto);
+
+        adicionarProdutoCarrinho(produto);
+      });
+    });
+
+    function adicionarProdutoCarrinho(produto) {
+      const itemCarrinhoExistente = itensCarrinho.querySelector(`[data-id="${produto.id}"]`);
+
+      if (itemCarrinhoExistente) {
+        const quantidade = parseInt(itemCarrinhoExistente.querySelector(".quantidade").textContent) + 1;
+        atualizarItemCarrinho(produto.id, quantidade);
+      } else {
+        const novoItemCarrinho = document.createElement("li");
+        novoItemCarrinho.dataset.id = produto.id;
+
+        const imagemItemCarrinho = document.createElement("img");
+        imagemItemCarrinho.src = produto.imagem;
+        imagemItemCarrinho.alt = produto.nome;
+
+        const nomeItemCarrinho = document.createElement("span");
+        nomeItemCarrinho.textContent = produto.nome;
+
+        const quantidadeItemCarrinho = document.createElement("span");
+        quantidadeItemCarrinho.classList.add("quantidade");
+        quantidadeItemCarrinho.textContent = "1";
+
+        const precoItemCarrinho = document.createElement("span");
+        precoItemCarrinho.classList.add("preco");
+        precoItemCarrinho.textContent = `R$ ${produto.preco.toFixed(2)}`;
+
+        const botaoRemover = document.createElement("button");
+        botaoRemover.textContent = "Remover";
+        botaoRemover.addEventListener("click", () => removerItemCarrinho(produto.id));
+
+        novoItemCarrinho.appendChild(imagemItemCarrinho);
+        novoItemCarrinho.appendChild(nomeItemCarrinho);
+        novoItemCarrinho.appendChild(quantidadeItemCarrinho);
+        novoItemCarrinho.appendChild(precoItemCarrinho);
+        novoItemCarrinho.appendChild(imagemItemCarrinho);
+        novoItemCarrinho.appendChild(nomeItemCarrinho);
+        novoItemCarrinho.appendChild(quantidadeItemCarrinho);
+        novoItemCarrinho.appendChild(precoItemCarrinho);
+        novoItemCarrinho.appendChild(botaoRemover);
+
+        itensCarrinho.appendChild(novoItemCarrinho);
+      }
+    }
+
+    function atualizarItemCarrinho(id, quantidade) {
+      const itemCarrinho = itensCarrinho.querySelector(`[data-id="${id}"]`);
+      itemCarrinho.querySelector(".quantidade").textContent = quantidade;
+    }
+
+    function removerItemCarrinho(id) {
+      const itemCarrinho = itensCarrinho.querySelector(`[data-id="${id}"]`);
+      itensCarrinho.removeChild(itemCarrinho);
+    }
+  </script>
+</body>
+
+</html>
