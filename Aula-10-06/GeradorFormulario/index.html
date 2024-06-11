@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gerador Dinâmico de Formulários</title>
+</head>
+
+<body>
+  <h1>Gerador Dinâmico de Formulários</h1>
+  <button onclick="adicionarCampo()">Adicionar Campo</button>
+  <form id="formulario"></form>
+
+  <script>
+    let contador = 0;
+
+    function adicionarCampo() {
+      contador++;
+      let formulario = document.getElementById('formulario');
+      let div = document.createElement('div');
+      div.id = 'campo' + contador;
+
+      let input = document.createElement('input');
+      input.type = 'text';
+      input.placeholder = 'Campo ' + contador;
+
+      let remover = document.createElement('button');
+      remover.innerText = 'Remover';
+      remover.onclick = function () {
+        removerCampo(div.id);
+      };
+
+      div.appendChild(input);
+      div.appendChild(remover);
+      formulario.appendChild(div);
+    }
+
+    function removerCampo(id) {
+      let campo = document.getElementById(id);
+      campo.parentNode.removeChild(campo);
+      function adicionarCampo() {
+  let campoId = "campo" + contador; 
+  let formulario = document.getElementById('formulario');
+  let div = document.createElement('div');
+  div.id = campoId; 
+
+  let input = document.createElement('input');
+  input.type = 'text';
+  input.id = campoId + "-input"; 
+  input.placeholder = 'Campo ' + contador;
+
+  let remover = document.createElement('button');
+  remover.innerText = 'Remover';
+  remover.onclick = function() {
+    removerCampo(campoId);
+  };
+
+  div.appendChild(input);
+  div.appendChild(remover);
+  formulario.appendChild(div);
+  contador++;
+}
+
+    }
+  </script>
+</body>
+
+</html>
